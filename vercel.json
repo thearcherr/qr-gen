@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }, // Allow API routes
-    { "source": "/(.*)", "destination": "/" }            // Rewrite everything else to root
+    { "source": "/api/(.*)", "destination": "/api/$1" }, 
+    { "source": "/(.*)", "destination": "/" }           
   ]
 }
