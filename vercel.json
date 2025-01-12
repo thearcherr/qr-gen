@@ -1,7 +1,13 @@
 {
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }, 
-    { "source": "/(.*)", "destination": "/" },
-    { "source": "/submit", "destination": "/submit" }          
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/submit", "methods": ["POST"], "dest": "/index.js" },
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
