@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Haseeb Ahmad",
   "license": "ISC",
@@ -14,10 +15,5 @@
     "body-parser": "^1.20.3",
     "express": "^4.21.2", 
     "qr-image": "^3.2.0"
-  },
-  {
-    "scripts": {
-      "start": "node index.js"
-    }
   }
 }
